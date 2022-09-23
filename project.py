@@ -1,7 +1,7 @@
 import random
 
 def play_monty_hall(choice):
-    prize = ['goat', 'car', 'goat']
+    prizes = ['goat', 'car', 'goat']
 
     random.shuffle(prizes)
 
@@ -16,7 +16,7 @@ def play_monty_hall(choice):
     options = [1,2,3]
     options.remove(choice)
     options.remove(opening_door)
-    switching_door = option[0]
+    switching_door = options[0]
 
     print('Now, do you want to swich to door number-%d? (yes/no)' %(switching_door))
     answer = input()
